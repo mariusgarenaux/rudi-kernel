@@ -21,4 +21,4 @@ class RudiKernel(PydanticAIBaseKernel):
     banner = "Rudi Agent"
 
     def __init__(self, **kwargs):
-        super().__init__(toolsets=[rudi_toolset], **kwargs)
+        super().__init__(kernel_name="rudi", toolsets=[rudi_toolset], **kwargs)
